@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/output.css" rel="stylesheet">
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Device Shop Checkout | devChallenges.io</title>
+  <style type="text/tailwindcss">
+    @theme {
+    --shadow-custom : 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+    --color-grayLight:#E5E7EB;
+    --color-whiteGray:#F3F4F6;
+    }
+  </style>
+</head>
+
+<body class="">
+  <main class="min-h-screen ">
+    <div class="w-full top-0 fixed bg-[url(/resources/background-image@2x.png)] bg-no-repeat bg-cover  h-60 ">
+    </div>
+
+    <div class=" relative mx-10  bg-transparent  font-[Inter]">
+      <div class="flex justify-center p-8 h-fit w-full items-center space-x-4">
+        <h1 class="text-2xl text-white font-bold">Checkout </h1>
+        <span class=" rounded-full text-white bg-black px-5 py-1  text-sm text-center">3 items</span>
+      </div>
+      <div class="grid md:grid-cols-2 shadow-md rounded-2xl">
+        <div
+          class=" md:rounded-l-2xl md:rounded-tr-none   rounded-t-2xl space-y-4  grid grid-rows-3 content-center items-center p-10 bg-[#D2D5DA] ">
+          <div class="flex space-x-2 w-full ">
+            <div class="w-30 h-24 shadow bg-white rounded-2xl flex items-center justify-center">
+              <img src="/resources/Gold.png" class=" object-cover" alt="Gold">
+            </div>
+            <div class="w-full px-4 flex flex-col justify-between">
+              <div class="flex justify-between">
+                <div class="space-y-1">
+                  <p class="  font-semibold">Iphone 12 pro</p>
+                  <p class="text-[#394150]">Golden</p>
+                </div>
+                <p class=" font-semibold">$999.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p class='text-[#394150]'>x 1</p>
+                <button class='p-1' name="delete-button1"><img src="resources/close-icon.svg" alt="close-icon"></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex space-x-2 w-full ">
+            <div class="w-30 h-24  shadow bg-white rounded-2xl flex items-center justify-center ">
+              <img src="/resources/Apple-watch.png" class="object-cover " alt="Apple-watch">
+            </div>
+            <div class="w-full px-4 flex flex-col justify-between">
+              <div class="flex justify-between">
+                <div class="space-y-1">
+                  <p class="  font-semibold">Apple Watch</p>
+                  <p class="text-[#394150]">Blue</p>
+                </div>
+                <p class="font-semibold">$399.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p class='text-[#394150]'>x 1</p>
+                <button class='p-1' name="delete-button2"><img src="resources/close-icon.svg" alt="close-icon"></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex space-x-2 w-full ">
+            <div class="w-30 h-24  shadow bg-white rounded-2xl flex items-center justify-center">
+              <img src="/resources/iMac.png" class="object-cover p-2" alt="iMac">
+            </div>
+            <div class="w-full px-4 flex flex-col justify-between">
+              <div class="flex justify-between">
+                <div class="space-y-1">
+                  <p class="  font-semibold">iMac</p>
+                  <p class="text-[#394150]">Green</p>
+                </div>
+                <p class="font-semibold">$1199.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p class='text-[#394150]'>x 1</p>
+                <button class='p-1' name="delete-button3"><img src="resources/close-icon.svg" alt="close-icon"></button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Horizontal bar  -->
+          <div class="flex items-center justify-center w-full  py-2">
+            <hr class="w-full text-[#a3a3a3cd] ">
+          </div>
+
+          <div class="w-full space-y-4 ">
+            <div class="flex space-x-2 w-full justify-between">
+              <input placeholder="Enter coupon code" class="border-[#394150] p-3 w-full rounded bg-[#F3F4F6]">
+              <button class="bg-black text-white px-8 min-w-fit rounded-lg">Apply button</button>
+            </div>
+            <div class="w-full flex flex-col space-y-3 font-semibold text-[#394150]">
+              <div class="flex justify-between w-full ">
+                <h2>Sub total</h2>
+                <span>$2597.00</span>
+              </div>
+              <div class="flex justify-between w-full ">
+                <h2>Tax</h2>
+                <span>$623.28</span>
+              </div>
+              <div class="flex justify-between w-full font-extrabold">
+                <h2 class="">Total</h2>
+                <span>$3220.28</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="md:rounded-r-2xl md:rounded-bl-none rounded-b-2xl bg-[#F3F4F6]">
+          <form action="submit" class=" p-8 space-y-6">
+            <h2 class=" font-semibold">Contact Information</h2>
+            <div class="grid grid-rows-3 gap-4 text-[#394150]">
+              <div class="  flex flex-col space-y-4">
+                <label for="first-last-name">First & Last name</label>
+                <input name="first-last-name" type="text" class="p-3 rounded  border-[#394150] bg-[#E5E7EB]"
+                  placeholder="Enter first & last name">
+              </div>
+              <div class="  flex flex-col  space-y-4">
+                <label for="email">Email Address</label>
+                <input name="email" id="email" type="email" class="p-3 rounded  border-[#394150] bg-[#E5E7EB]"
+                  placeholder="Enter email address">
+              </div>
+              <div class=" grid grid-cols-2 gap-4">
+                <div class="  flex flex-col  space-y-2">
+                  <label for="country">Country</label>
+                  <select name="country" id="country" class="p-3 rounded  border bg-[#E5E7EB]">
+                    <option value="Finland">Finland</option>
+                  </select>
+                </div>
+                <div class="  flex flex-col  space-y-2">
+                  <label for="postal-code">Postal Code</label>
+                  <input name="postal-code" id="postal-code" type="text"
+                    class="p-3 rounded  border-[#394150] bg-[#E5E7EB]" placeholder="Enter first & last name">
+                </div>
+              </div>
+            </div>
+            <button class="w-full bg-black text-white text-center p-4 rounded-lg  cursor-pointer"
+              type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--     
+    Checkout
+    
+    3 items
+    
+    iPhone 12 Pro
+    
+    Golden
+    
+    $999.00
+    
+    x 1
+    
+    Apple Watch
+    
+    Blue
+    
+    $399.00
+    
+    iMac
+    
+    Green
+    
+    $1199.00
+    
+    Enter coupon code
+    
+    Apply Coupon
+    
+    Sub total
+    
+    $2597.00
+    
+    Tax
+    
+    $623.28
+    
+    Total
+    
+    $3220.28
+    
+    Contact Information
+    
+    First & Last name
+    
+    Enter first & last name
+    
+    Email Address
+    
+    Enter email address
+    
+    Country
+    
+    Finland
+    
+    Postal Code
+    
+    00270
+    
+    Continue
+     -->
+
+  <div class="author-info">
+    Coded by <a href="#">Your Name Here</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
+</body>
+
+</html>
